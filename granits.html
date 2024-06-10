@@ -135,17 +135,17 @@
             const sections = document.querySelectorAll('.sections-container section');
             sections.forEach(section => showCurrentImage(section, 0));
         });
-        document.getElementById('toggleButton').addEventListener('click', function(e) {
-            e.preventDefault();
-            var menu = document.getElementById('menu');
-            if (menu.classList.contains('active')) {
-                menu.classList.remove('active');
-                document.body.style.backgroundColor = ''; // Remove black background when menu is closed
-            } else {
-                menu.classList.add('active');
-                document.body.style.backgroundColor = 'white'; // Add white background when menu is open
-            }
-        });
+       document.getElementById('toggleButton').addEventListener('click', function(e) {
+    e.preventDefault();
+    var menu = document.getElementById('menu');
+    if (menu.classList.contains('active')) {
+        menu.classList.remove('active');
+        document.body.style.backgroundColor = ''; // Retirer l'arrière-plan noir lorsque le menu est fermé
+    } else {
+        menu.classList.add('active');
+        document.body.style.backgroundColor = 'white'; // Ajouter un arrière-plan blanc lorsque le menu est ouvert
+    }
+});
     </script>
 </body>
 </html>
