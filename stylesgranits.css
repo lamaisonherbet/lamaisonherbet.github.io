@@ -118,8 +118,15 @@ nav {
 }
 
 .toggle {
-    font-size: 30px;
-    display: none;
+     display: none; /* Cacher par défaut */
+    position: absolute;
+    top: 15px;
+    right: 20px; /* Ajustez la position à droite selon vos besoins */
+    color: #FF7F00; /* Couleur du toggle */
+}
+.toggle ion-icon {
+    font-size: 30px; /* Ajustez la taille de l'icône */
+    cursor: pointer; /* Curseur indiquant que c'est cliquable */
 }
 
 @media screen and (max-width: 768px) {
