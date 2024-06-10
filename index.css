@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
-    padding-top: 200px;
     font-family: "Poppins", sans-serif;
     background-size: cover; 
     background-image: url('devanture.jpg');  
@@ -9,6 +8,7 @@ body {
     background-attachment: fixed; 
     background-position: center;  
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +105,7 @@ nav {
 
 .search-bar button {
     padding: 10px;
-    background-color:#FF7F00;
+    background-color: #FF7F00;
     color: white;
     border: none;
     border-radius: 0 20px 20px 0;
@@ -120,6 +120,10 @@ nav {
 .toggle {
     font-size: 30px;
     display: none;
+}
+
+.toggle ion-icon {
+    color: #FF7F00; /* Couleur orange pour l'icône de toggle */
 }
 
 @media screen and (max-width: 600px) {
@@ -145,6 +149,8 @@ nav {
 
     .menu.active {
         display: flex;
+        background: white; /* Couleur de fond changée en blanc */
+        z-index: 999; /* Valeur de z-index ajustée */
     }
 
     .toggle {
@@ -162,96 +168,18 @@ nav {
     }
 }
 
-.couleur h1 {
-    color: orange;
-    margin: 0;
-    text-align: center;
-    padding: 20px;
-}
-
-.services-section {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.services-section h1 {
-    color:orange; /* Couleur orange pour le titre Services */
-    font-size: 32px;
-    margin: 0;
-}
-
-.info-container {
+.center-content {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 50px auto;
-}
-
-section {
-    background-color: orange;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1;
-}
-
-section h1 {
-    color: #FF7F00;
-    font-size: 24px;
-    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-}
-
-.responsive-img {
+    flex-direction: column;
+    height: 100%;
     width: 100%;
-    max-width: 500px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
-@media screen and (max-width: 960px) {
-    .info-container {
-        padding: 10px;
-    }
-}
-.toggle ion-icon {
-    color: #FF7F00; 
-}
-
-
-@media screen and (max-width: 600px) {
-    .menu {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: white;
-        width: 100%;
-        text-align: center;
-        display: none; /* Cachez initialement le menu */
-        z-index: 999; /* Ajuster le z-index pour empêcher le menu de se cacher derrière d'autres éléments */
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu li {
-        padding: 15px 10px;
-        font-size: 16px;
-    }
-
-    .menu li a {
-        color: #FF7F00;
-        text-decoration: none;
-        display: block;
-        padding: 10px 0;
-    }
-
-    .menu li a:hover {
-        color: #FF5733;
-    }
+.center-content h1 {
+    font-size: 48px;
+    color: #FF7F00;
+    margin: 0;
 }

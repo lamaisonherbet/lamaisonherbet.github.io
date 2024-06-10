@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="info.css" />
+    <title>Maison Herbet</title>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <a href="#"><img src="Logo finale.png" alt="logo"> Maison Herbet</a>
+        </div>
+        <div class="menu-container">
+            <ul class="menu" id="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="granits.html">Granits et Monuments</a></li>
+                <li class="dropdown">
+                    <a href="services.html">Services</a>
+                </li>
+                <li><a href="Information1.html">Informations</a></li>
+            </ul>
+            <div class="toggle">
+                <a href="#" id="toggleButton"><ion-icon name="menu-sharp"></ion-icon></a>
+            </div>
+        </div>
+        <div class="search-bar">
+            <input type="text" id="searchInput" placeholder="Rechercher par type de monument ou couleur..." onkeyup="filterMonuments()">
+            <button><ion-icon name="search-outline"></ion-icon></button>
+        </div>
+    </nav>
+
+    <main class="info-container">
+        <section id="histoire">
+            <h2>Histoire de l'entreprise</h2>
+            <p>Notre entreprise funéraire a été fondée en 1886 par la famille HERBET. Depuis sa création, nous sommes implantés à Thiais en face du Cimetière Thiais Parisien.</p>
+        </section>
+    
+        <section id="localisation">
+            <h2>Localisation</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.7172971064884!2d2.375634815681524!3d48.764721407667476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66f1e01300f5f%3A0x3f3ed4bce85f62e0!2s3-4%20Rue%20Esplanade%20Auguste%20Perret%2C%2094380%20Thiais%2C%20France!5e0!3m2!1sen!2sus!4v1641225192344!5m2!1sen!2sus" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    
+        <section id="horaires">
+            <h2>Horaires d'ouverture</h2>
+            <ul>
+                <li>Lundi - Dimanche : 9h00 - 17h00</li>
+                <li>Sauf jour férié</li>
+            </ul>
+        </section>
+        
+        <section id="Contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>01.46.86.70.91</li>
+                <li>lamaisonherbet@gmail.com</li>
+            </ul>
+        </section>
+    </main>
+    
+    <script>
+        document.getElementById('toggleButton').addEventListener('click', function(e) {
+            e.preventDefault();
+            var menu = document.getElementById('menu');
+            if (menu.classList.contains('active')) {
+                menu.classList.remove('active');
+                document.body.style.backgroundColor = ''; // Remove black background when menu is closed
+            } else {
+                menu.classList.add('active');
+                document.body.style.backgroundColor = 'white'; // Add white background when menu is open
+            }
+        });
+    </script>
+</body>
+</html>
+
