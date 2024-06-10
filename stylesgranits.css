@@ -216,8 +216,8 @@ nav {
 
 section {
     background-color: orange;
-    padding: 20px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -244,7 +244,7 @@ section {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 1;
     min-width: 30%; /* Ajustez pour que les sections puissent s'adapter */
-    max-width: 400px; /* Par exemple, pour limiter la largeur maximale */
+    max-width: 200px; /* Par exemple, pour limiter la largeur maximale */
 }
 
 .image-container {
