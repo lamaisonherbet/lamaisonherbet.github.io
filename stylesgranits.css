@@ -293,18 +293,9 @@ align-items: center;
 .placerboutonD {
     position: relative;
     top: -80px;
-    left: 320px;
+    left: 290px;
 }
-.placerboutonDr {
-    position: relative;
-    top: -70px;
-    left: 470px;
-}
-.placerboutonga {
-    position: relative;
-    top: -95px;
-    left: 457px;
-}
+
 .btn-custom {
     display: inline-block;
     padding: 12px 24px;
