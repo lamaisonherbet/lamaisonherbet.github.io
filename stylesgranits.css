@@ -1,15 +1,10 @@
+
 /* Import de la police Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap');
 
-.body amiri-regular-italic {
-    font-family: "Amiri", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-
 body {
     padding-top: 400px;
-    font-family: "amiri", sans-serif;
+    font-family: "Amiri", serif;
     background-size: cover; 
     background-image: url('');  
     background-repeat: no-repeat; 
@@ -22,7 +17,6 @@ body {
     height: 100vh;
     flex-direction: column;
     background-color:#fdac47;
-    
 }
 
 nav {
@@ -132,7 +126,7 @@ nav {
 }
 
 .toggle ion-icon {
-    color: #FF7F00; /* Couleur orange pour l'icône de toggle */
+    color: #FF7F00;
 }
 
 @media screen and (max-width: 900px) {
@@ -158,8 +152,8 @@ nav {
 
     .menu.active {
         display: flex;
-        background: white; /* Couleur de fond changée en blanc */
-        z-index: 999; /* Valeur de z-index ajustée */
+        background: white;
+        z-index: 999;
     }
 
     .toggle {
@@ -192,108 +186,111 @@ nav {
     color: white;
 }
 
-
-
-
-
-
 .sections-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 section {
-background-color: white;
-padding: 20px;
-margin: 10px;
-border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-flex: 1;
-min-width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 300px;
 }
 
 section h2 {
-font-size: 24px;
-margin-bottom: 10px;
-text-align: center;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #FF7F00;
 }
 
 .image-container {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 10px;
-overflow-x: hidden; /* Pour cacher les images qui dépassent */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    overflow-x: hidden;
 }
 
 .image-container img {
-width: 190px; /* Ajustez la taille des images selon vos besoins */
-margin: 0 10px;
-display: flex;
-justify-content: center;
-align-items: center;
+    width: 190px;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .btn-prev,
 .btn-next {
-background-color: #FF7F00;
-color: white;
-border: none;
-border-radius: 4px;
-padding: 10px 20px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-margin-top: 10px;
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
 }
 
 .btn-prev:hover,
 .btn-next:hover {
-background-color: #FF5733;
+    background-color: #FF5733;
 }
 
-.placerboutonG {
-position: relative;
-top: 80px;
-left: 0px;
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 
-.placerboutonD {
-position: relative;
-top: -10px;
-left: 310px;
-}
-.placerboutonDr{
-    position: relative;
-    top: -150px;
-    left: 300px;
-    }
 .btn-custom {
-display: inline-block;
-padding: 12px 24px;
-background-color: #FF7F00;
-color: white;
-border: none;
-border-radius: 25px;
-font-size: 16px;
-font-weight: bold;
-text-transform: uppercase;
-text-align: center;
-text-decoration: none;
-transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #FF7F00;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .btn-custom:hover {
-background-color: #FF5733;
-transform: scale(1.05);
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    background-color: #FF5733;
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 .btn-custom:active {
-transform: scale(1);
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-h2{
-    color: #FF7F00;
+
+/* Utility classes for positioning buttons */
+.placerboutonG {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.placerboutonD {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.placerboutonDr {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
 }
