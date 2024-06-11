@@ -8,7 +8,7 @@
   }
 
 body {
-    padding-top: 350px;
+    padding-top: 400px;
     font-family: "amiri", sans-serif;
     background-size: cover; 
     background-image: url('');  
@@ -260,7 +260,7 @@ left: 0px;
 
 .placerboutonD {
 position: relative;
-top: 120px;
+top: 90px;
 left: 310px;
 }
 .placerboutonDr{
