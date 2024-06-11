@@ -1,15 +1,8 @@
-/* Import de la police Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap');
-
-.body amiri-regular-italic {
-    font-family: "Amiri", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
 body {
     padding-top: 250px;
-    font-family: "amiri", sans-serif;
+    font-family: "amiri";
     background-size: cover; 
     background-image: url('');  
     background-repeat: no-repeat; 
@@ -22,7 +15,6 @@ body {
     height: 100vh;
     flex-direction: column;
     background-color:#fdac47;
-    
 }
 
 nav {
@@ -114,7 +106,7 @@ nav {
 
 .search-bar button {
     padding: 10px;
-    background-color: #FF7F00;
+    background-color:#FF7F00;
     color: white;
     border: none;
     border-radius: 0 20px 20px 0;
@@ -129,10 +121,6 @@ nav {
 .toggle {
     font-size: 30px;
     display: none;
-}
-
-.toggle ion-icon {
-    color: #FF7F00; /* Couleur orange pour l'icône de toggle */
 }
 
 @media screen and (max-width: 600px) {
@@ -151,15 +139,13 @@ nav {
         position: absolute;
         top: 60px;
         left: 0;
-        background: black;
+        background: white;
         width: 100%;
         text-align: center;
     }
 
     .menu.active {
         display: flex;
-        background: white; /* Couleur de fond changée en blanc */
-        z-index: 999; /* Valeur de z-index ajustée */
     }
 
     .toggle {
@@ -177,6 +163,107 @@ nav {
     }
 }
 
+
+.info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.info-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-container p {
+    line-height: 1.6;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+}
+
+.search-container {
+    margin-left: auto;
+}
+
+.info-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.info-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.info-container p {
+    line-height: 1.6;
+}
+
+.map-container {
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+}
+
+section {
+    background-color: white ;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.menu-container #toggleButton ion-icon {
+    color: orange;
+}
+.sections-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; 
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    min-width: 30%; /* Ajustez pour que les sections puissent s'adapter */
+    max-width: 400px; /* Par exemple, pour limiter la largeur maximale */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    overflow-x: auto; /* Utilisez auto ou scroll selon vos besoins */
+}
+
+.image-container img {
+    max-width: 100%; /* Ajuste la largeur maximale des images */
+    height: auto; /* Garde le ratio hauteur/largeur */
+}
+h2{
+    color: #FF7F00;
+}
+
 .center-content {
     display: flex;
     justify-content: center;
@@ -189,112 +276,5 @@ nav {
 
 .center-content h1 {
     font-size: 48px;
-    color: white;
-    margin: 0;
-}
-
-
-
-
-
-
-.sections-container {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-
-section {
-background-color: white;
-padding: 20px;
-margin: 10px;
-border-radius: 8px;
-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-flex: 1;
-min-width: 300px;
-}
-
-section h2 {
-font-size: 24px;
-margin-bottom: 10px;
-text-align: center;
-}
-
-.image-container {
-display: flex;
-justify-content: center;
-align-items: center;
-margin-top: 10px;
-overflow-x: hidden; /* Pour cacher les images qui dépassent */
-}
-
-.image-container img {
-width: 190px; /* Ajustez la taille des images selon vos besoins */
-margin: 0 10px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.btn-prev,
-.btn-next {
-background-color: #FF7F00;
-color: white;
-border: none;
-border-radius: 4px;
-padding: 10px 20px;
-cursor: pointer;
-transition: background-color 0.3s ease;
-margin-top: 10px;
-}
-
-.btn-prev:hover,
-.btn-next:hover {
-background-color: #FF5733;
-}
-
-.placerboutonG {
-position: relative;
-top: 80px;
-left: 0px;
-}
-
-.placerboutonD {
-position: relative;
-top: 0px;
-left: 290px;
-}
-.placerboutonDr{
-    position: relative;
-    top: -75px;
-    left: 300px;
-    }
-.btn-custom {
-display: inline-block;
-padding: 12px 24px;
-background-color: #FF7F00;
-color: white;
-border: none;
-border-radius: 25px;
-font-size: 16px;
-font-weight: bold;
-text-transform: uppercase;
-text-align: center;
-text-decoration: none;
-transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.btn-custom:hover {
-background-color: #FF5733;
-transform: scale(1.05);
-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.btn-custom:active {
-transform: scale(1);
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-h2{
-    color: #FF7F00;
+    color:white;
 }

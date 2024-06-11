@@ -17,8 +17,12 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="granits.html">Granits et Monuments</a></li>
                 <li class="dropdown">
-                    <a href="services.html">Services</a>
-                    
+                    <a href="#">Services</a>
+                    <div class="dropdown-content">
+                        <a href="services.html#Configuration">Configuration monument</a>
+                        <a href="services.html#obseque">Organisation obsèques</a>
+                        <a href="services.html#entretien">Entretien</a>
+                    </div>
                 </li>
                 <li><a href="Information1.html">Informations</a></li>
             </ul>
@@ -31,44 +35,78 @@
             </div>
         </div>
     </nav>
-    <div class="services-section">
+
+    <div class="services-section" id="services">
         <h1>Services</h1>
     </div>
+
     <main class="info-container">
-        <section data-type="Configuration">
-            <h1>Configuration monument</h1>
-            <center><img src="configuration monuments.jpg" alt="configuration" class="responsive-img"></center>
-            <p>La maison herbet vous propose .....</p>
+        <section id="Configuration" class="service-section">
+            <div class="service-content">
+                <h1>Configuration monument</h1>
+                <p>La Configuration d'un monument funéraire est une démarche respectueuse pour honorer la mémoire d'un être cher.Ce processus comprend plusieur étapes esssentielles:</p>
+                 <ul>
+<li>le choix des matériaux</li>
+<li>le type de monument</li>
+<li>le design et la gravure</li>
+<li>les accesoires</li>
+                 </ul>
+            
+            
+            
+            
+            
+            </div>
+            <div class="service-image">
+                <img src="configuration monuments.jpg" alt="configuration" class="responsive-img">
+            </div>
         </section>
 
-        <section data-type="obseque">
-            <h1>Organisation obsèques</h1>
-            <center><img src="organisation.png" alt="organisation" class="responsive-img"></center>
-            <p>Notre maison propose également de vous accompagner dans l'organisation des obsèques.</p>
+        <section id="obseque" class="service-section">
+            <div class="service-content">
+                <h1>Organisation obsèques</h1>
+                <p>L'organisation des obsèques est un moment empreint de respect et de delicatesse.Les pompes funèbres jouent un rôle crucial en prenant en charge la préparation du défunt avec une attention particulière,veillant à respecter ses volontés et celles de sa famille. </p>
+        <P>La céremonie qu'elle soit religieuse ou laïque,devient alors un temps fort de recueillement et de souvenirs,permettant à chaqun d'exprimer son affection et sabpeine.</P>
+            </div>
+            <div class="service-image">
+                <img src="organisation.png" alt="organisation" class="responsive-img">
+            </div>
         </section>
 
-        <section data-type="entretien">
-            <h1>Entretien</h1>
-            <center><img src="entretien 1.png" alt="entretien" class="responsive-img"></center>
-            <p>Nous pouvons aussi vous proposer les entretiens de sépulture annuels. On nettoie le monument, on le fleurit puis on vous envoie une photo par email.</p>
+        <section id="entretien" class="service-section">
+            <div class="service-content">
+                <h1>Entretien</h1>
+                
+                <p>Conscient de l'importance de preserver de la dignité et le respect des lieux de repos de nos chers disparus,La Maison Herbet vous propose deux formules adaptée à vos besoins:un entretien à l'année ou bien un entretien ponctuel:</p>
+                <h2>Annuel:</H2>
+                <p>L'entretien à l'année comprend différentes proposition que vous pouvez consulter via notre site.</p>
+          <h2>ponctuel:</H2>
+           <p>Pour ceux qui préferent une options plus flexible,nous proposons également des entretiens ponctuel.Ces interventions peuvent être planifiées à votre convenances,pour des occassions spéciales comme les anniversaires,les fetes de toussaint ou simplement lorsque vous en ressentez le besoin.</p>
+           
+           
+            </div>
+            <div class="service-image">
+                <img src="entretien 1.png" alt="entretien" class="responsive-img">
+            </div>
         </section>
     </main>
+
     <script>
         const toggleButton = document.getElementById('toggleButton');
         const menu = document.querySelector('.menu');
-    
+
         toggleButton.addEventListener('click', function(e) {
             e.preventDefault();
             menu.classList.toggle('active');
         });
-    
+
         // Fermer le menu complet lorsque l'utilisateur clique en dehors du menu
         document.addEventListener('click', (e) => {
             if (!menu.contains(e.target) && !toggleButton.contains(e.target)) {
                 menu.classList.remove('active');
             }
         });
-    
+
         // Gérer le clic sur les éléments de la barre de menu (sauf le toggle) pour rediriger vers les pages correspondantes
         const menuLinks = document.querySelectorAll('.menu li:not(.dropdown)');
         menuLinks.forEach(link => {
@@ -76,7 +114,11 @@
                 menu.classList.remove('active'); // Fermer le menu complet
             });
         });
+
+        // Fonction de filtrage des monuments (à implémenter)
+        function filterMonuments() {
+            // Ajoutez ici le code de filtrage si nécessaire
+        }
     </script>
-    
 </body>
 </html>

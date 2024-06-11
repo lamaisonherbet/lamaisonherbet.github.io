@@ -1,10 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+/* Import de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital@1&display=swap');
+
+.body amiri-regular-italic {
+    font-family: "Amiri";
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+/* Styles de base pour le corps de la page */
 body {
-    padding-top: 200px;
-    font-family: "Poppins", sans-serif;
+    padding-top: 500px;
+    font-family: "amiri" ;
     background-size: cover; 
-    background-image: url('devanture.jpg');  
+    background-image: url('');  
     background-repeat: no-repeat; 
     background-attachment: fixed; 
     background-position: center;  
@@ -14,9 +23,12 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    background-color:#fdac47;
 }
 
+/* Styles pour la barre de navigation */
 nav {
+    padding-top: 1000px;
     background: white;
     padding: 0 20px;
     display: flex;
@@ -26,6 +38,7 @@ nav {
     position: fixed;
     top: 0;
     z-index: 1000;
+    margin: 0%;
 }
 
 .logo a {
@@ -48,8 +61,6 @@ nav {
 .menu-container {
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex: 1;
 }
 
 .menu {
@@ -71,7 +82,7 @@ nav {
 }
 
 .menu li a:hover {
-    color: #FF7F00;
+    color: #FF5733;
 }
 
 .search-bar {
@@ -138,7 +149,7 @@ nav {
         position: absolute;
         top: 60px;
         left: 0;
-        background: black;
+        background: white;
         width: 100%;
         text-align: center;
     }
@@ -162,24 +173,26 @@ nav {
     }
 }
 
-.couleur h1 {
-    color: orange;
-    margin: 0;
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
 }
 
-.services-section {
-    text-align: center;
-    padding: 20px 0;
-}
-
-.services-section h1 {
-    color:orange; /* Couleur orange pour le titre Services */
-    font-size: 32px;
+.center-content h1 {
+    font-size: 48px;
+    color: #FF7F00;
     margin: 0;
 }
 
+
+
+/* Styles pour les conteneurs d'informations */
 .info-container {
     display: flex;
     justify-content: space-around;
@@ -188,22 +201,45 @@ nav {
     margin: 50px auto;
 }
 
-section {
-    background-color: orange;
+/* Styles pour chaque section de service */
+.service-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     padding: 20px;
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    flex-wrap: wrap;
+    background-color:white;
+}
+
+.service-section h1 {
+    color: #FF7F00;
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
     flex: 1;
 }
 
-section h1 {
-    color: #FF7F00;
-    font-size: 24px;
-    margin-bottom: 10px;
-    text-align: center;
+.service-content {
+    flex: 1;
+    text-align: left; /* Aligner le texte à gauche */
 }
 
+.service-image {
+    flex: 1;
+    max-width: 300px; /* Ajustez la largeur maximale selon votre besoin */
+    margin-left: 20px; /* Espacement entre le texte et l'image */
+}
+
+.service-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Styles pour les images responsives */
 .responsive-img {
     width: 100%;
     max-width: 500px;
@@ -212,46 +248,56 @@ section h1 {
     margin: 0 auto;
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 600px) {
     .info-container {
         padding: 10px;
     }
+
+    .service-section {
+        flex-direction: column;
+    }
+
+    .service-image {
+        margin: 20px auto; /* Centrer l'image sur les petits écrans */
+        max-width: 100%;
+    }
+}
+
+/* Styles pour les liens du menu déroulant */
+.menu .dropdown {
+    position: relative;
+}
+
+.menu .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.menu .dropdown-content a {
+    color: orange;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu .dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+h2{
+    font-size: 20px;
+    color: #FF7F00;
 }
 .toggle ion-icon {
-    color: #FF7F00; 
-}
-
-
-@media screen and (max-width: 600px) {
-    .menu {
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        background: white;
-        width: 100%;
-        text-align: center;
-        display: none; /* Cachez initialement le menu */
-        z-index: 999; /* Ajuster le z-index pour empêcher le menu de se cacher derrière d'autres éléments */
-    }
-
-    .menu.active {
-        display: flex;
-    }
-
-    .menu li {
-        padding: 15px 10px;
-        font-size: 16px;
-    }
-
-    .menu li a {
-        color: #FF7F00;
-        text-decoration: none;
-        display: block;
-        padding: 10px 0;
-    }
-
-    .menu li a:hover {
-        color: #FF5733;
-    }
+    color: #FF7F00; /* Couleur orange pour l'icône de toggle */
 }
