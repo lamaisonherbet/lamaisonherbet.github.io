@@ -135,7 +135,7 @@ nav {
     color: #FF7F00; /* Couleur orange pour l'icône de toggle */
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
     nav {
         flex-direction: column;
     }
@@ -260,8 +260,8 @@ left: 0px;
 
 .placerboutonD {
 position: relative;
-top: -20px;
-left: 290px;
+top: 120px;
+left: 310px;
 }
 .placerboutonDr{
     position: relative;
