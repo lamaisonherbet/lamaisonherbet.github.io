@@ -217,7 +217,7 @@ nav {
 <body>
     <nav>
         <div class="logo">
-            <a href="#"><img src="Logo finale.png" alt="logo"> Maison Herbet</a>
+            <a href="#"><img src="images/Logo finale.png" alt="logo"> Maison Herbet</a>
         </div>
         <div class="menu-container">
             <ul class="menu" id="menu">
@@ -241,25 +241,6 @@ nav {
     <div class="center-content">
         <h1>Prendre un Rendez-vous</h1>
         <div class="form-container">
-            <?php
-            if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                $name = htmlspecialchars($_POST['name']);
-                $email = htmlspecialchars($_POST['email']);
-                $phone = htmlspecialchars($_POST['phone']);
-                $message = htmlspecialchars($_POST['message']);
-
-                $to = 'lola.esteves.pro@gmail.com';
-                $subject = 'Nouveau rendez-vous';
-                $body = "Nom: $name\nEmail: $email\nTéléphone: $phone\nMessage:\n$message";
-                $headers = "From: $email";
-
-                if (mail($to, $subject, $body, $headers)) {
-                    echo "<p>Message envoyé avec succès</p>";
-                } else {
-                    echo "<p>Échec de l'envoi du message</p>";
-                }
-            }
-            ?>
             <form action="prisederendezvous.php" method="POST">
                 <input type="text" name="name" placeholder="Votre nom" required>
                 <input type="email" name="email" placeholder="Votre email" required>
@@ -285,3 +266,5 @@ nav {
     </script>
 </body>
 </html>
+
+
