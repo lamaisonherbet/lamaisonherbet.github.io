@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+ES:wght@100..400&display=swap');
 
 body {
     padding-top: 250px;
-    font-family: "amiri";
+    font-family: "Playwrite";
     background-size: cover; 
     background-image: url('');  
     background-repeat: no-repeat; 
