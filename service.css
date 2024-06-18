@@ -252,6 +252,7 @@ nav {
     }
 }
 
-/* Styles pour les liens du menu déroulant */
-.menu .dropdown
+.menu-container #toggleButton ion-icon {
+    color: orange;
+}
 
