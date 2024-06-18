@@ -11,19 +11,19 @@
 /* Styles de base pour le corps de la page */
 body {
     padding-top: 1000px;
-    font-family: "amiri" ;
-    background-size: cover; 
-    background-image: url('');  
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    background-position: center;  
+    font-family: "Amiri", serif;
+    background-size: cover;
+    background-image: url('');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     flex-direction: column;
-    background-color:#fdac47;
+    background-color: #fdac47;
 }
 
 /* Styles pour la barre de navigation */
@@ -116,7 +116,7 @@ nav {
 
 .search-bar button {
     padding: 10px;
-    background-color:#FF7F00;
+    background-color: #FF7F00;
     color: white;
     border: none;
     border-radius: 0 20px 20px 0;
@@ -173,7 +173,6 @@ nav {
     }
 }
 
-
 .center-content {
     display: flex;
     justify-content: center;
@@ -189,8 +188,6 @@ nav {
     color: #FF7F00;
     margin: 0;
 }
-
-
 
 /* Styles pour les conteneurs d'informations */
 .info-container {
@@ -210,9 +207,8 @@ nav {
     margin: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
     flex-wrap: wrap;
-    background-color:white;
+    background-color: white;
 }
 
 .service-section h1 {
@@ -273,7 +269,7 @@ nav {
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
@@ -292,27 +288,28 @@ nav {
     background-color: #f1f1f1;
 }
 
-
-
-h2{
+h2 {
     font-size: 20px;
     color: #FF7F00;
 }
+
 .toggle ion-icon {
     color: #FF7F00; /* Couleur orange pour l'icône de toggle */
 }
-.center-content {
+
+.entretien-annuel, .entretien-ponctuel {
     display: flex;
-    justify-content: center;
     align-items: center;
-    text-align: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.center-content h1 {
-    font-size: 48px;
-    color: white;
-    margin: 0;
+.entretien-annuel .service-image, .entretien-ponctuel .service-image {
+    max-width: 150px;
+    margin-left: 20px;
 }
+
+.entretien-annuel h2, .entretien-ponctuel h2 {
+    margin-top: 0;
+}
+
