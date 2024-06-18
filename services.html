@@ -1,21 +1,25 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PVVJFCF20F"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-PVVJFCF20F');
-</script>
+   <!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PVVJFCF20F"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-PVVJFCF20F');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="service.css" />
     <title>Maison Herbet</title>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </head>
+
 <body>
     <nav>
         <div class="logo">
@@ -39,7 +43,8 @@
                 <a href="#" id="toggleButton"><ion-icon name="menu-sharp"></ion-icon></a>
             </div>
             <div class="search-bar">
-                <input type="text" id="searchInput" placeholder="Rechercher par type de monument ou couleur..." onkeyup="filterMonuments()">
+                <input type="text" id="searchInput" placeholder="Rechercher par type de monument ou couleur..."
+                    onkeyup="filterMonuments()">
                 <button><ion-icon name="search-outline"></ion-icon></button>
             </div>
         </div>
@@ -49,23 +54,18 @@
         <h1>Services</h1>
     </div>
 
-
     <main class="info-container">
         <section id="Configuration" class="service-section">
             <div class="service-content">
                 <h1>Configuration monument</h1>
-                <p>La configuration d'un monument funéraire est une démarche respectueuse pour honorer la mémoire d'un être cher. Ce processus comprend plusieur étapes esssentielles:</p>
-                 <ul>
-<li>le choix des matériaux</li>
-<li>le type de monument</li>
-<li>le design et la gravure</li>
-<li>les accesoires</li>
-                 </ul>
-            
-            
-            
-            
-            
+                <p>La configuration d'un monument funéraire est une démarche respectueuse pour honorer la mémoire d'un être
+                    cher. Ce processus comprend plusieurs étapes essentielles:</p>
+                <ul>
+                    <li>le choix des matériaux</li>
+                    <li>le type de monument</li>
+                    <li>le design et la gravure</li>
+                    <li>les accessoires</li>
+                </ul>
             </div>
             <div class="service-image">
                 <img src="configuration monuments.jpg" alt="configuration" class="responsive-img">
@@ -75,8 +75,11 @@
         <section id="obseque" class="service-section">
             <div class="service-content">
                 <h1>Organisation obsèques</h1>
-                <p>L'organisation des obsèques est un moment empreint de respect et de delicatesse. Les pompes funèbres jouent un rôle crucial en prenant en charge la préparation du défunt avec une attention particulière, veillant à respecter ses volontés et celles de sa famille. </p>
-        <P>La céremonie qu'elle soit religieuse ou laïque, devient alors un temps fort de recueillement et de souvenirs, permettant à chaq'un d'exprimer son affection et sa peine.</P>
+                <p>L'organisation des obsèques est un moment empreint de respect et de délicatesse. Les pompes funèbres jouent
+                    un rôle crucial en prenant en charge la préparation du défunt avec une attention particulière, veillant à
+                    respecter ses volontés et celles de sa famille.</p>
+                <p>La cérémonie, qu'elle soit religieuse ou laïque, devient alors un temps fort de recueillement et de
+                    souvenirs, permettant à chacun d'exprimer son affection et sa peine.</p>
             </div>
             <div class="service-image">
                 <img src="organisation.png" alt="organisation" class="responsive-img">
@@ -86,17 +89,25 @@
         <section id="entretien" class="service-section">
             <div class="service-content">
                 <h1>Entretien</h1>
-                
-                <p>Conscient de l'importance de preserver de la dignité et le respect des lieux de repos de nos chers disparus,La Maison Herbet vous propose deux formules adaptée à vos besoins:un entretien à l'année ou bien un entretien ponctuel:</p>
-                <h2>Annuel:</H2>
-                <p>L'entretien à l'année comprend différentes proposition que vous pouvez consulter via notre site.</p>
-          <h2>Ponctuel:</H2>
-<p>Pour ceux qui préferent une options plus flexible, nous proposons également des entretiens ponctuel. Ces interventions peuvent être planifiées à votre convenances, pour des occassions spéciales comme les anniversaires, les fêtes de toussaint ou simplement lorsque vous en ressentez le besoin.</p>
-           
-           
-            </div>
-            <div class="service-image">
-                <img src="entretien 1.png" alt="entretien" class="responsive-img">
+                <p>Conscient de l'importance de préserver la dignité et le respect des lieux de repos de nos chers disparus, La
+                    Maison Herbet vous propose deux formules adaptées à vos besoins: un entretien à l'année ou bien un entretien
+                    ponctuel:</p>
+                <div class="entretien-annuel">
+                    <h2>Annuel:</h2>
+                    <p>L'entretien à l'année comprend différentes propositions que vous pouvez consulter via notre site.</p>
+                    <div class="service-image">
+                        <img src="entretien_annuel.jpg" alt="entretien annuel" class="responsive-img">
+                    </div>
+                </div>
+                <div class="entretien-ponctuel">
+                    <h2>Ponctuel:</h2>
+                    <p>Pour ceux qui préfèrent une option plus flexible, nous proposons également des entretiens ponctuels. Ces
+                        interventions peuvent être planifiées à votre convenance, pour des occasions spéciales comme les
+                        anniversaires, les fêtes de Toussaint ou simplement lorsque vous en ressentez le besoin.</p>
+                    <div class="service-image">
+                        <img src="entretien_ponctuel.jpg" alt="entretien ponctuel" class="responsive-img">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -105,7 +116,7 @@
         const toggleButton = document.getElementById('toggleButton');
         const menu = document.querySelector('.menu');
 
-        toggleButton.addEventListener('click', function(e) {
+        toggleButton.addEventListener('click', function (e) {
             e.preventDefault();
             menu.classList.toggle('active');
         });
@@ -131,4 +142,5 @@
         }
     </script>
 </body>
+
 </html>
